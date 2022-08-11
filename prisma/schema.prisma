@@ -29,6 +29,7 @@ model Product {
   name        String
   description String
   price       Int
+  image       String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   Order       Order[]
@@ -39,6 +40,7 @@ model Order {
   customer   Customer @relation(fields: [customerId], references: [id])
   product    Product  @relation(fields: [productId], references: [id])
   quantity   Int
+  status     String
   tax        Int
   total      Int
   createdAt  DateTime @default(now())
