@@ -4,6 +4,6 @@
 
 @layer base {
   body {
-    @apply bg-sky-900 text-stone-100;
+    @apply bg-gradient-to-l to-stone-100 from-stone-500  text-stone-900;
   }
 }
